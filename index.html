@@ -1,0 +1,46 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>To Do List</title>
+    <link href="https://cdn.jsdelivr.net/npm/daisyui@2.24.0/dist/full.css" rel="stylesheet" type="text/css" />
+    <script src="https://cdn.tailwindcss.com"></script>
+</head>
+
+<body>
+
+    <!-- Input Field -->
+    <div class="my-8 text-center">
+        <h1 class="text-4xl font-medium">To Do List</h1>
+        <input type="text" placeholder="Type here" class="mt-4 input input-bordered input-warning w-full max-w-xs" />
+        <button class="m-1 btn btn-error" onclick="addButton(this)">Click Here</button>
+    </div>
+    <!-- Input Field -->
+
+    <!-- Table Field -->
+
+    <div class="overflow-x-auto">
+        <table class="table w-6/12 mx-auto">
+            <!-- head -->
+            <thead>
+                <tr>
+                    <th>No</th>
+                    <th>Name</th>
+                    <th>Action</th>
+                </tr>
+
+            </thead>
+            <tbody id="table">
+
+            </tbody>
+        </table>
+    </div>
+
+    <!-- Table Field -->
+    <script src="script.js"></script>
+</body>
+
+</html>
